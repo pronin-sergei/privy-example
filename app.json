@@ -31,9 +31,8 @@
       "package": "dev.privy.example"
     },
     "extra": {
-      "privyAppId": "<your-privy-app-id>",
-      "privyClientId": "<your-privy-app-client-id>",
-      "passkeyAssociatedDomain": "https://<your-associated-domain>"
+      "privyAppId": "cmbgokf82001wl10lsuq51q79",
+      "privyClientId": "client-WY6MAHkduRHdgAKir2GLZMNNdMepS8cgngR85RCKbn71x"
     },
     "plugins": [
       "expo-router",

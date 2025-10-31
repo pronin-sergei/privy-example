@@ -8,6 +8,9 @@ import {
   PrivyEmbeddedWalletProvider,
   useLinkWithOAuth,
 } from "@privy-io/expo";
+import {
+  useMfaEnrollmentUI
+} from "@privy-io/expo/ui";
 import Constants from "expo-constants";
 import { useLinkWithPasskey } from "@privy-io/expo/passkey";
 import { PrivyUser, WalletAddress } from "@privy-io/public-api";
@@ -39,12 +42,13 @@ const toMainIdentifier = (x: PrivyUser["linked_accounts"][number]) => {
 export const UserScreen = () => {
   const [chainId, setChainId] = useState("1");
   const [signedMessages, setSignedMessages] = useState<string[]>([]);
-
+  const {init} = useMfaEnrollmentUI();
   const { logout, user } = usePrivy();
   const { linkWithPasskey } = useLinkWithPasskey();
   const oauth = useLinkWithOAuth();
   const { wallets, create } = useEmbeddedEthereumWallet();
   const account = getUserEmbeddedEthereumWallet(user);
+  const isTotpEnrolled = user?.mfa_methods.map((m) => m.type).includes("totp");
 
   const signMessage = useCallback(
     async (provider: PrivyEmbeddedWalletProvider) => {
@@ -84,6 +88,9 @@ export const UserScreen = () => {
 
   return (
     <ScrollView>
+      <View>
+        <Button title={isTotpEnrolled ? "Enrolled with TOTP" : "Enroll with TOTP"} onPress={() => init({ mfaMethods: ['totp'] })} />
+      </View>
       <LinkAccounts />
       <UnlinkAccounts />
       <Wallets />
