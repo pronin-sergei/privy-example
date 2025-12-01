@@ -1457,41 +1457,48 @@
   dependencies:
     zod "^3.24.3"
 
-"@privy-io/chains@0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@privy-io/chains/-/chains-0.0.3.tgz#71e532be792ce9515553493c254dc40dc4efd67b"
-  integrity sha512-4vpm/nROVm4UEASUGPjXIQvirDHYXs/b0vgixwy1EeVVxIRSbkv9tWJXYApWs+h4vaKZZYssKzJMIG2c+gYfSw==
+"@privy-io/api-types@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@privy-io/api-types/-/api-types-0.2.0.tgz#1c6d859625ab68b0a76711923de25ef5046a2c76"
+  integrity sha512-1R4UU+L4lztDAuvFiOZZQcnsrxZl0xHLK264gEMeLMZDW/2KkB8OeSb71lnW7/trMJV6iZY0OQ6XG0t3F1Nvug==
 
-"@privy-io/ethereum@0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@privy-io/ethereum/-/ethereum-0.0.2.tgz#1b6eddf48e5e0c3aa13adb8ca61f62496f744677"
-  integrity sha512-FnJ1dzgg/tij4jLeKHLlZM9uNk4WN+iIOkc8CG0FZKUQxqXH60Fs/dMF6Xbndd5CQkUO8LUU7FLom/405VKXpQ==
+"@privy-io/chains@0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@privy-io/chains/-/chains-0.0.5.tgz#af1d1a505e98e38b6890bcba9d167f66ae540c4c"
+  integrity sha512-5fOmCOOs7DjGTGnPRv4/2X6/xBKG8fRNrFgNv9ajYdRsKUg86CixszQCYyvZmVxv7XSGrX1oiS1ATAXzfqRmDg==
+
+"@privy-io/ethereum@0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@privy-io/ethereum/-/ethereum-0.0.3.tgz#45ddbee417af0640a9af7f2e6d2c34a3556758fd"
+  integrity sha512-FliULRsa9fO5LGj5qq4rh3CKgiZ6eTncr/GOAsfUERPBNiFlw9dXCq8PUnwkSpektL1x/mnkhOEnvKj77KdNfw==
 
 "@privy-io/expo-native-extensions@^0.0.5":
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/@privy-io/expo-native-extensions/-/expo-native-extensions-0.0.5.tgz#e9a5e2e5f5985944542bd3b147b053cc6ce7d5b2"
   integrity sha512-PEk7HpjEAEMp/gnrlgStkwi2naiSHXjK67E/5rc6Bjsvy3L3R6nSy6musinXKOKf4VghAdaDsTWXD6utxesVsg==
 
-"@privy-io/expo@0.58.8":
-  version "0.59.8"
-  resolved "https://registry.yarnpkg.com/@privy-io/expo/-/expo-0.59.8.tgz#7df3a11f10a9f4420a12b2feb0a3852963f5457e"
-  integrity sha512-JWb9BGgKl1xz1HPRi+NKzL43ZgaJh46IQstXibUFY+wVV6iRkOCrVAzkyHxoAcwgLZx9llpbTYDJ00geKUtYdA==
+"@privy-io/expo@0.60.3":
+  version "0.60.3"
+  resolved "https://registry.yarnpkg.com/@privy-io/expo/-/expo-0.60.3.tgz#ef9bb342ea3dc3aa5cc9522f40e703524c5d2be0"
+  integrity sha512-QgxRrEKQVJOsRsguiK3RBpfnz2jGDr7ujmuPncASd+9l7OWuOAU7aoQTGp1TgYEzaW6RZSKbhqs17WmtHurcxQ==
   dependencies:
-    "@privy-io/js-sdk-core" "0.56.3"
+    "@privy-io/api-types" "0.2.0"
+    "@privy-io/js-sdk-core" "0.58.1"
     "@scure/base" "^1.2.4"
     react-fast-compare "^3.2.2"
     tweetnacl "^1.0.3"
     zustand "^5.0.4"
 
-"@privy-io/js-sdk-core@0.56.3":
-  version "0.56.3"
-  resolved "https://registry.yarnpkg.com/@privy-io/js-sdk-core/-/js-sdk-core-0.56.3.tgz#599ca40876739dc3151447d5f4610f861615e3e5"
-  integrity sha512-CGpTh2s6QWgFOXdywBGlMI3IVD3cgXDpo8TK2glDZPxkY0QYwd9wnBlxMVQ5KvjRqj0/zXnstOU7pcv8pFF+jw==
+"@privy-io/js-sdk-core@0.58.1":
+  version "0.58.1"
+  resolved "https://registry.yarnpkg.com/@privy-io/js-sdk-core/-/js-sdk-core-0.58.1.tgz#f0aead39e7e927bb982e43ae3c2cbabb3ee2184f"
+  integrity sha512-06KmrGxZAXNIEtHmfjUfFFcII/fFk3eJBu/eREP+jgeLJJ2aY5paqSSSF2q9YSEJEPOyMEwigq6UzD73E9lpkA==
   dependencies:
     "@privy-io/api-base" "1.7.1"
-    "@privy-io/chains" "0.0.3"
-    "@privy-io/ethereum" "0.0.2"
-    "@privy-io/public-api" "2.51.0"
+    "@privy-io/api-types" "0.2.0"
+    "@privy-io/chains" "0.0.5"
+    "@privy-io/ethereum" "0.0.3"
+    "@privy-io/routes" "0.0.3"
     canonicalize "^2.0.0"
     eventemitter3 "^5.0.1"
     fetch-retry "^6.0.0"
@@ -1501,16 +1508,12 @@
     set-cookie-parser "^2.6.0"
     uuid ">=8 <10"
 
-"@privy-io/public-api@2.51.0":
-  version "2.51.0"
-  resolved "https://registry.yarnpkg.com/@privy-io/public-api/-/public-api-2.51.0.tgz#5afa48efe2747a39a4bda04fd714bbc2c5fc3675"
-  integrity sha512-RLNNzDtYxLfoNzCl+yIvgDZzgAYPJ7vRRjPrI81i6L0FmcF3CgQSIyb3Yq2wSmgB4GVDIIiZ8XqjDNCt3klGgg==
+"@privy-io/routes@0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@privy-io/routes/-/routes-0.0.3.tgz#e70572c324357d919e5f843d9e516eaea971cdc7"
+  integrity sha512-JXdJaMsOzLJ/7AGAG5DgRMzSYAAg2GwUkMMeKHVYjDF9CCIvHJ6shKTCamuuqYT10J76phFYRCDg/71gbBXF1Q==
   dependencies:
-    "@privy-io/api-base" "1.7.1"
-    bs58 "^5.0.0"
-    libphonenumber-js "^1.10.31"
-    viem "^2"
-    zod "^3.24.3"
+    "@privy-io/api-types" "0.2.0"
 
 "@radix-ui/react-compose-refs@1.1.2":
   version "1.1.2"
@@ -2651,11 +2654,6 @@ base-x@^3.0.2:
   dependencies:
     safe-buffer "^5.0.1"
 
-base-x@^4.0.0:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/base-x/-/base-x-4.0.1.tgz#817fb7b57143c501f649805cb247617ad016a885"
-  integrity sha512-uAZ8x6r6S3aUM9rbHGVOIsR15U/ZSc82b3ymnCPsT45Gk1DDvhDPdIgB5MrhirZWt+5K0EEPQH985kNqZgNPFw==
-
 base64-js@^1.2.3, base64-js@^1.3.0, base64-js@^1.3.1, base64-js@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
@@ -2757,13 +2755,6 @@ bs58@^4.0.0, bs58@^4.0.1:
   integrity sha512-Ok3Wdf5vOIlBrgCvTq96gBkJw+JUEzdBgyaza5HLtPm7yTHkjRy8+JzNyHF7BHa0bNWOQIp3m5YF0nnFcOIKLw==
   dependencies:
     base-x "^3.0.2"
-
-bs58@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/bs58/-/bs58-5.0.0.tgz#865575b4d13c09ea2a84622df6c8cbeb54ffc279"
-  integrity sha512-r+ihvQJvahgYT50JD05dyJNKlmmSlMoOGwn1lCcEzanPglg7TxYjioQUYehQ9mAR/+hOSd2jRc/Z2y5UxBymvQ==
-  dependencies:
-    base-x "^4.0.0"
 
 bser@2.1.1:
   version "2.1.1"
@@ -4991,7 +4982,7 @@ levn@^0.4.1:
     prelude-ls "^1.2.1"
     type-check "~0.4.0"
 
-libphonenumber-js@^1.10.31, libphonenumber-js@^1.10.44:
+libphonenumber-js@^1.10.44:
   version "1.12.25"
   resolved "https://registry.yarnpkg.com/libphonenumber-js/-/libphonenumber-js-1.12.25.tgz#1af48b816082100bf88f47d342387fbac1f1a773"
   integrity sha512-u90tUu/SEF8b+RaDKCoW7ZNFDakyBtFlX1ex3J+VH+ElWes/UaitJLt/w4jGu8uAE41lltV/s+kMVtywcMEg7g==
@@ -7264,7 +7255,7 @@ vary@~1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
 
-viem@2.32.0, viem@^2:
+viem@2.32.0:
   version "2.32.0"
   resolved "https://registry.yarnpkg.com/viem/-/viem-2.32.0.tgz#6994fce43c5feed21367c80dd488a755838101da"
   integrity sha512-pHwKXQSyEWX+8ttOQJdU5dSBfYd6L9JxARY/Sx0MBj3uF/Zaiqt6o1SbzjFjQXkNzWSgtxK7H89ZI1SMIA2iLQ==
